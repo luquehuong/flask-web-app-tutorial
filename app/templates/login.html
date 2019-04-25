@@ -5,14 +5,14 @@
     <form action="" method="POST" novalidate>
         {{ form.hidden_tag() }}
         <p>
-            {{ form.username.lable }}<br>
+            {{ form.username.label }}<br>
             {{ form.username(size=32) }}<br>
             {% for error in form.username.errors %}
             <span style="color: red;">[{{ error }}]</span>
             {% endfor %}
         </p>
         <p>
-            {{ form.password.lable }}<br>
+            {{ form.password.label }}<br>
             {{ form.password(size=32) }}
             {% for error in form.password.errors %}
             <span style="color: red;">[{{ error }}]</span>
