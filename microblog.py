@@ -11,7 +11,8 @@ def index():
 
 @app.shell_context_processor
 def make_shell_context():
+    db.init_app(app)
     return {'db': db, 'User': User, 'Post': Post}
 
-if __name__ == "__main__":
+if __name__ == '__main__':
     app.run(debug=True, use_reloader=True)
