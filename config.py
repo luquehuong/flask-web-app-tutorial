@@ -10,4 +10,5 @@ class Config(object):
     MAIL_PORT = int(os.environ.get('MAIL_PORT') or 25)
     MAIL_USERNAME = os.environ.get('MAIL_USERNAME')
     MAIL_PASSWORD = os.environ.get('MAIL_PASSWORD')
-    ADMINS = ['huonglq@schwabe.net']
+    ADMINS = ['huong@schwabe.net']
+    POSTS_PER_PAGE = 25
